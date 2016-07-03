@@ -47,39 +47,39 @@ namespace Cliver
         public class ParsedDateTime
         {
             /// <summary>
-            /// Index of first char of a date substring found in the string
+            /// Position of the date substring found
             /// </summary>
             readonly public int IndexOfDate = -1;
             /// <summary>
-            /// Length a date substring found in the string
+            /// Length of the date substring found
             /// </summary>
             readonly public int LengthOfDate = -1;
             /// <summary>
-            /// Index of first char of a time substring found in the string
+            /// Position of the time substring found
             /// </summary>
             readonly public int IndexOfTime = -1;
             /// <summary>
-            /// Length of a time substring found in the string
+            /// Length of the time substring found
             /// </summary>
             readonly public int LengthOfTime = -1;
             /// <summary>
-            /// DateTime found in the string
+            /// DateTime detected
             /// </summary>
             readonly public DateTime DateTime;
             /// <summary>
-            /// True if a date was found within the string
+            /// True if a date was found, False if it was constructed
             /// </summary>
             readonly public bool IsDateFound;
             /// <summary>
-            /// True if a time was found within the string
+            /// True if a time was found, False if it was constructed
             /// </summary>
             readonly public bool IsTimeFound;
             /// <summary>
-            /// UTC offset if it was found within the string
+            /// UTC offset if it was found
             /// </summary>
             readonly public TimeSpan UtcOffset;
             /// <summary>
-            /// True if UTC offset was found in the string
+            /// True if UTC offset was found
             /// </summary>
             readonly public bool IsUtcOffsetFound;
             /// <summary>
